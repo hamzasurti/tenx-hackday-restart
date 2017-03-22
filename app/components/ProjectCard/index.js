@@ -7,7 +7,6 @@
 import React from 'react';
 // import styled from 'styled-components';
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
-import { GridTile } from 'material-ui/GridList';
 import FlatButton from 'material-ui/FlatButton';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -16,8 +15,8 @@ import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import Paper from 'material-ui/Paper';
 
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+// import { FormattedMessage } from 'react-intl';
+// import messages from './messages';
 const style = {
   height: 400,
   width: 250,
@@ -36,14 +35,14 @@ class ProjectCard extends React.Component { // eslint-disable-line react/prefer-
                 title="URL Avatar"
                 subtitle="Subtitle"
                 avatar="http://cdn1.medicalnewstoday.com/content/images/articles/271157-bananas.jpg"
-                actAsExpander={true}
-                showExpandableButton={true}
+                actAsExpander
+                showExpandableButton
               />
-              <CardMedia expandable={true}>
-                <img src="http://cdn1.medicalnewstoday.com/content/images/articles/271157-bananas.jpg" />
+              <CardMedia expandable> {/* eslint-disable-line react/jsx-boolean-value*/}
+                <img src="http://cdn1.medicalnewstoday.com/content/im.jpg" role="presentation" />
               </CardMedia>
               <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardText expandable={true}>
+              <CardText expandable> {/* eslint-disable-line react/jsx-boolean-value*/}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
                 Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -54,7 +53,7 @@ class ProjectCard extends React.Component { // eslint-disable-line react/prefer-
                 <FlatButton label="-" />
               </CardActions>
             </Card>
-           </Paper> 
+          </Paper>
         </MuiThemeProvider>
 
       </div>

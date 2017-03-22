@@ -6,16 +6,22 @@
 
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
+
 import makeSelectGradingPage from './selectors';
-import messages from './messages';
+// import messages from './messages';
+import GradingSlider from './../../components/GradingSlider';
+import VideoPlayer from './../../components/VideoPlayer';
+
 
 export class GradingPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
-        <FormattedMessage {...messages.header} />
+        <VideoPlayer />
+        <GradingSlider title="Creativity" />
+        <GradingSlider title="Impact" />
+        <GradingSlider title="Viability" />
       </div>
     );
   }
