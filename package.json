@@ -1,10 +1,9 @@
 {
   "name": "Ten-x Hackday",
-  "version": "3.4.0",
+  "version": "0.0.1",
   "description": "A hackday tool to grade projects at ten-x",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
   },
   "engines": {
     "npm": ">=3",
