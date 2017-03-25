@@ -28,6 +28,11 @@ const ReactBoilerplate = {
         'ip',
         'minimist',
         'sanitize.css',
+        'mongodb',
+        'mongoose',
+        'cookie-parser',
+        'jsonwebtoken',
+        'express-jwt',
       ],
 
       /**
